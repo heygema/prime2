@@ -14,7 +14,6 @@
   "homepage": "https://github.com/heygema/prime2",
   "scripts": {
     "prepare": "bsb -clean-world && bsb -make-world",
-    "prepublish": "bsb -clean-world && bsb -make-world",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "watch:node": "nodemon ./src/Prime.bs.js",
