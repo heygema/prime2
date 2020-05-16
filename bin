@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const util = require('util');
+util.inspect.defaultOptions.maxArrayLength = null;
 const { isPrime, primes } = require("./src/Prime.bs.js");
 
 const [_, __, flag, a, b] = process.argv;
@@ -29,7 +31,7 @@ try {
   }
   let fn = flags[flag] || (() => {});
   let result = fn(Number(a), Number(b));
-  console.log(result);
+  console.log(util.inspect(result, { maxArrayLength: null }));
 } catch (err) {
   console.error(err);
   console.log(help());
