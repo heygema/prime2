@@ -9,14 +9,18 @@ const [_, __, flag, a, b] = process.argv;
 let help = () => {
   console.log(`
     --help : log help
-    --check (n) : check if n is prime
-    --check (a, b) : generate primes from a -> b
+    --check (n)
+    -c : check if n is prime
+    --generate (a, b)
+    -o : generate primes from a -> b
     `);
 };
 
 let flags = {
   "--check": isPrime,
+  "-c": isPrime,
   "--generate": primes,
+  "-o": primes,
   "--help": help
 };
 
