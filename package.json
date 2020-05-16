@@ -5,8 +5,10 @@
   "bin": {
     "prime2": "bin"
   },
+  "homepage":"https://github.com/heygema/prime2",
   "scripts": {
-    "prepare": "bsb -make-world",
+    "prepare": "bsb -clean-world && bsb -make-world",
+    "prepublish": "bsb -clean-world && bsb -make-world",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "watch:node": "nodemon ./src/Prime.bs.js",
@@ -17,7 +19,7 @@
     "BuckleScript",
     "Prime"
   ],
-  "author": "",
+  "author": "heygema",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.2.2",
