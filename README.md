@@ -1,7 +1,7 @@
 # Prime2
 
 This is just another prime numbers generator re-implemented, from [primes](https://www.npmjs.com/package/primes).
-recoded in ReasonML (just for my own utils). hence the name prime2.
+recoded in ReasonML, hence the name prime2.
 
 available for global command
 ## Install
@@ -10,9 +10,24 @@ available for global command
 npm install -g prime2
 
 # as package
-npm install prime2 --dev
+npm install prime2
 ```
-## Execute
+
+## To include in Reason project:
+in bsconfig.json
+```
+"bs-dependencies": ["prime2"],
+```
+
+```ocaml
+# available as Prime module
+open Prime
+Prime.isPrime: int -> boolean
+Prime.primes: ~start: int ~ending: int -> list(int)
+```
+
+
+## Execute as command line
 ```bash
 prime2 --check 3 # output > true
 
@@ -27,33 +42,4 @@ isPrime(n: number): boolean;
 // primes
 // generate list of primes starting from `start` to `ending`
 primes(start: number, ending: number):  number[]
-```
-
-# Build
-
-```bash
-# for yarn
-yarn build
-
-# for npm
-npm run build
-```
-
-# Build + Watch
-
-```bash
-# for yarn
-yarn start
-
-# for npm
-npm run start
-```
-
-# Execute the node
-```bash
-# for yarn
-yarn watch:node
-
-# for npm
-npm run watch:node
 ```
