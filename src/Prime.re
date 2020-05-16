@@ -56,16 +56,5 @@ let isPrime = (n: int) => {
    };
    */
 
-/*
-   NOTE:
-   a stands for -> alpha, the first
-   o -> omega, and the last
- */
 let primes = (~start: int, ~ending: int) =>
   List2.gen(~start, ~n=ending) |> List.filter(isPrime);
-
-let num = 2909;
-
-Js.log(
-  primes(~start=5, ~ending=31) |> Array.of_list,
-);
