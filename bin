@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
-const {isPrime, primes} = require('./src/Prime.bs.js');
+const { isPrime, primes } = require("./src/Prime.bs.js");
 
 const [_, __, flag, a, b] = process.argv;
 
 let help = () => {
-    console.log(`
+  console.log(`
     --help : log help
     --check (n) : check if n is prime
     --check (a, b) : generate primes from a -> b
-    `)
-  };
+    `);
+};
 
 let flags = {
   "--check": isPrime,
@@ -19,15 +19,18 @@ let flags = {
 };
 
 try {
-  if (!a && flag === '--check') throw new Error('enter valid arguments!');
-  if (!a || !b && flag === '--generate') throw new Error('enter valid arguments!');
+  if (a && isNaN(Number(a))) throw new Error("enter valid arguments!");
+  if (b && isNaN(Number(b))) throw new Error("enter valid arguments!");
+  if (!a && flag === "--check") throw new Error("enter valid arguments!");
+  if (!a || (!b && flag === "--generate"))
+    throw new Error("enter valid arguments!");
   if (!flags[flag]) {
-    throw new Error('enter a valid argument!');
+    throw new Error("enter a valid argument!");
   }
   let fn = flags[flag] || (() => {});
-  let result = fn(a, b);
+  let result = fn(Number(a), Number(b));
   console.log(result);
-} catch(err) {
-  console.error(err)
-  console.log(help())
+} catch (err) {
+  console.error(err);
+  console.log(help());
 }
