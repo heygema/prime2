@@ -16,6 +16,7 @@ module List2 = {
   };
 };
 
+[@genType "isPrime"]
 let isPrime = (n: int) => {
   let rec isPrime = (d: int) =>
     Int32.(
@@ -55,6 +56,6 @@ let isPrime = (n: int) => {
      true;
    };
    */
-
+[@genType]
 let primes = (~start: int, ~ending: int) =>
   List2.gen(~start, ~n=ending) |> List.filter(isPrime);

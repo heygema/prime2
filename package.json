@@ -1,14 +1,15 @@
 {
   "name": "prime2",
   "version": "0.1.0",
-  "main": "./lib/js/src/Prime.bs.js",
+  "main": "./src/Prime.bs.js",
   "scripts": {
     "prepare": "bsb -make-world",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
-    "watch:node": "nodemon ./lib/js/src/Prime.bs.js",
+    "watch:node": "nodemon ./src/Prime.bs.js",
     "clean": "bsb -clean-world"
   },
+  "types": "./src/Prime.gen.tsx",
   "keywords": [
     "BuckleScript",
     "Prime"
@@ -17,6 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.2.2",
+    "gentype": "^3.22.0",
     "nodemon": "^2.0.4"
   }
 }
