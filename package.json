@@ -2,7 +2,7 @@
   "name": "prime2",
   "version": "0.1.4",
   "main": "./src/Prime.bs.js",
-  "files": ["**.bs.js", "**gen.tsx"],
+  "files": ["lib/**/*", "src/**/*", "**.bs.js", "**gen.tsx"],
   "bin": {
     "prime2": "bin"
   },
