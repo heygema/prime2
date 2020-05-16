@@ -1,8 +1,13 @@
 {
   "name": "prime2",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "./src/Prime.bs.js",
-  "files": ["lib/**/*", "src/**/*", "**.bs.js", "**gen.tsx"],
+  "files": [
+    "lib/**/*",
+    "src/**/*",
+    "**.bs.js",
+    "**gen.tsx"
+  ],
   "bin": {
     "prime2": "bin"
   },
@@ -16,7 +21,12 @@
     "clean": "bsb -clean-world"
   },
   "types": "./src/Prime.gen.tsx",
-  "keywords": ["BuckleScript", "Prime", "prime2", "prime numbers"],
+  "keywords": [
+    "BuckleScript",
+    "Prime",
+    "prime2",
+    "prime numbers"
+  ],
   "author": "heygema",
   "license": "MIT",
   "devDependencies": {
