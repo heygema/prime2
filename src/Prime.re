@@ -16,7 +16,11 @@ module List2 = {
   };
 };
 
-[@genType "isPrime"]
+/*
+   ref: https://stackoverflow.com/questions/11768958/prime-sieve-in-haskell
+*/
+
+[@gentype "isPrime"]
 let isPrime = (n: int) => {
   let rec isPrime = (d: int) =>
     Int32.(
@@ -33,29 +37,6 @@ let isPrime = (n: int) => {
   };
 };
 
-/*
- TODO: left naive implementation for now (slower)
- let isPrime = (num: int) =>
-   switch (num) {
-   | 1 => false
-   | _ =>
-     let topNum = num + 2;
-     let a = List2.gen(~n=num) |> List.map(_ => true);
-     let upper = sqrt(a |> List.length |> float_of_int) |> int_of_float;
-     let sieve = {
-       let rec genSieve = (xs, i, limit: int) =>
-         switch (xs, i) {
-           | (xs, i) => {
-               i |> List.nth(xs) === true ? [] : []
-             }
-         | _ when i === limit => xs
-         | _ => xs
-         };
-       genSieve(a, 0, upper);
-     };
-     true;
-   };
-   */
-[@genType]
+[@gentype]
 let primes = (~start: int, ~ending: int) =>
-  List2.gen(~start, ~n=ending) |> List.filter(isPrime);
+  List2.gen(~start, ~n=ending) |> List.filter(isPrime) |> Array.of_list;
