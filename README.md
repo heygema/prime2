@@ -1,6 +1,26 @@
-# Basic Reason Template
+# Prime2
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+Actually this is just another prime numbers generator re-implemented, from [primes](https://www.npmjs.com/package/primes).
+recoded in ReasonML (just for my own utils). hence the name prime2.
+
+available for global command
+```bash
+# as global command
+npm install -g prime2
+
+# as package
+npm install prime2 --dev
+```
+
+in javascript/typescript there are 2 functions
+```typescript
+// return true if n is prime.
+isPrime(n: number): boolean;
+
+// primes
+generate list of primes starting from `start` to `ending`
+primes(start: number, ending: number):  number[]
+```
 
 # Build
 
@@ -22,3 +42,11 @@ yarn start
 npm run start
 ```
 
+# Execute the node
+```bash
+# for yarn
+yarn watch:node
+
+# for npm
+npm run watch:node
+```
