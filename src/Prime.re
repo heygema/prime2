@@ -20,7 +20,7 @@ module List2 = {
    ref: https://stackoverflow.com/questions/11768958/prime-sieve-in-haskell
 */
 
-[@gentype "isPrime"]
+[@gentype]
 let isPrime = (n: int) => {
   let rec isPrime = (d: int) =>
     Int32.(
