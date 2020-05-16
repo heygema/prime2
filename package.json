@@ -2,6 +2,9 @@
   "name": "prime2",
   "version": "0.1.0",
   "main": "./src/Prime.bs.js",
+  "bin": {
+    "prime2": "bin"
+  },
   "scripts": {
     "prepare": "bsb -make-world",
     "build": "bsb -make-world",
