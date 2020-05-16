@@ -1,11 +1,11 @@
 {
   "name": "prime2",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "./src/Prime.bs.js",
   "bin": {
     "prime2": "bin"
   },
-  "homepage":"https://github.com/heygema/prime2",
+  "homepage": "https://github.com/heygema/prime2",
   "scripts": {
     "prepare": "bsb -clean-world && bsb -make-world",
     "prepublish": "bsb -clean-world && bsb -make-world",
