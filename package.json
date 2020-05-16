@@ -1,6 +1,6 @@
 {
   "name": "prime2",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "./src/Prime.bs.js",
   "files": [
     "lib/**/*",
