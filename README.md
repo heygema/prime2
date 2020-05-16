@@ -16,11 +16,11 @@ npm install prime2
 ## To include in Reason project:
 in bsconfig.json
 ```
-"bs-dependencies": ["prime2"],
+"bs-dependencies": ["prime2"]
 ```
 
+available as Prime module
 ```ocaml
-# available as Prime module
 open Prime
 Prime.isPrime: int -> boolean
 Prime.primes: ~start: int ~ending: int -> list(int)
@@ -34,12 +34,14 @@ prime2 --check 3 # output > true
 prime2 --generate 0 10  # output > [2, 3, 5, 7]
 ```
 
-in javascript/typescript there are 2 functions
+## As js/ts utils
 ```typescript
+import * as prime2 from 'prime2';
+
 // return true if n is prime.
-isPrime(n: number): boolean;
+prime2.isPrime(n: number): boolean;
 
 // primes
 // generate list of primes starting from `start` to `ending`
-primes(start: number, ending: number):  number[]
+prime2.primes(start: number, ending: number):  number[]
 ```
