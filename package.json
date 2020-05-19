@@ -26,7 +26,13 @@
     "BuckleScript",
     "Prime",
     "prime2",
-    "prime numbers"
+    "isPrime",
+    "primes",
+    "prime numbers",
+    "prime numbers generator",
+    "prime checker",
+    "numbers",
+    "math"
   ],
   "author": "heygema",
   "license": "MIT",

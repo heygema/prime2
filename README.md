@@ -27,7 +27,11 @@ Prime.primes: ~start: int ~ending: int -> list(int)
 ```
 
 
-## Execute as command line
+## Execute as command line (these days however there's npx)
+```bash
+npx prime2 --check 3
+```
+
 ```bash
 prime2 --check 3 # output > true
 
