@@ -1,8 +1,8 @@
 # Prime2
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](LICENSE)
 
-This is just another prime numbers generator re-implemented, from [primes](https://www.npmjs.com/package/primes).
-recoded in ReasonML, hence the name prime2.
+This is just another prime numbers generator, look at [primes](https://www.npmjs.com/package/primes).
+coded in ReasonML (idk why), hence the name prime2.
 
 available for global command
 ## Install
@@ -22,11 +22,9 @@ in bsconfig.json
 
 available as Prime module
 ```ocaml
-open Prime
 Prime.isPrime: int -> boolean
-Prime.primes: ~start: int ~ending: int -> list(int)
+Prime.primes: ~start: int ~ending: int -> array(int)
 ```
-
 
 ## Execute as command line (these days however there's npx)
 ```bash

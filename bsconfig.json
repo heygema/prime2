@@ -1,6 +1,6 @@
 {
   "name": "prime2",
-  "version": "0.1.0",
+  "version": "1.0.16",
   "sources": {
     "dir": "src",
     "subdirs": true
@@ -11,10 +11,6 @@
   },
   "suffix": ".bs.js",
   "bs-dependencies": [],
-  "warnings": {
-    "error": "+101"
-  },
-  "namespace": true,
   "refmt": 3,
   "gentypeconfig": {
     "language": "typescript",

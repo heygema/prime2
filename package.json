@@ -9,7 +9,10 @@
     "src/**/*",
     "**.bs.js",
     "**gen.tsx",
-    "bsconfig.json"
+    "bsconfig.json",
+    "README.md",
+    "LICENSE",
+    "src"
   ],
   "bin": {
     "prime2": "bin"
