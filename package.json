@@ -8,7 +8,8 @@
     "lib/**/*",
     "src/**/*",
     "**.bs.js",
-    "**gen.tsx"
+    "**gen.tsx",
+    "bsconfig.json"
   ],
   "bin": {
     "prime2": "bin"
