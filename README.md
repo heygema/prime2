@@ -1,4 +1,5 @@
 # Prime2
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](LICENSE)
 
 This is just another prime numbers generator re-implemented, from [primes](https://www.npmjs.com/package/primes).
 recoded in ReasonML, hence the name prime2.
