@@ -19,11 +19,10 @@
   },
   "homepage": "https://github.com/heygema/prime2",
   "scripts": {
-    "prepare": "bsb -clean-world && bsb -make-world",
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
+    "build": "rescript",
+    "start": "rescript -w",
     "watch:node": "nodemon ./src/Prime.bs.js",
-    "clean": "bsb -clean-world"
+    "clean": "rescript clean -with-deps"
   },
   "types": "./src/Prime.gen.tsx",
   "keywords": [
@@ -42,7 +41,8 @@
   "license": "MIT",
   "devDependencies": {
     "gentype": "^3.22.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "rescript": "^9.1.4"
   },
   "dependencies": {
     "bs-platform": "^7.3.2"
