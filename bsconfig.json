@@ -15,6 +15,7 @@
   "gentypeconfig": {
     "language": "typescript",
     "shims": {},
+    "generatedFileExtension": ".gen.tsx",
     "debug": {
       "all": false,
       "basic": false
