@@ -43,7 +43,7 @@
   "license": "MIT",
   "devDependencies": {
     "gentype": "^3.50.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.22",
     "rescript": "^9.1.4"
   },
   "dependencies": {
